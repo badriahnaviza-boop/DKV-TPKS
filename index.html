@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Taman Purbakala Kerajaan Sriwijaya</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <a href="#" class="logo">
+                <h2>TPKS</h2>
+                <span>Taman Purbakala Kerajaan Sriwijaya</span>
+            </a>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h4>SELAMAT DATANG DI</h4>
+
+            <h1>
+                PERANCANGAN KOMUNIKASI VISUAL GRAFIS LINGKUNGAN DESTINASI WISATA <br>
+                TAMAN PURBAKALA SUMATERA SELATAN
+            </h1>
+
+            <p>
+                Media Informasi Digital Berbasis Desain Komunikasi Visual.
+                Menjaga warisan masa lalu, menginspirasi masa depan.
+                Mari bersama melestarikan jejak kejayaan Sriwijaya.
+            </p>
+
+            <a href="#tentang" class="btn">Jelajahi Lebih Lanjut</a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TENTANG ================= -->
+
+    <section id="tentang">
+
+        <div class="container">
+
+            <div class="text">
+
+                <h2>TPKS</h2>
+
+                <p>
+                    Taman Purbakala Kerajaan Sriwijaya merupakan kawasan
+                    cagar budaya yang menyimpan sejarah besar Kerajaan
+                    Sriwijaya sebagai kerajaan maritim terbesar di Nusantara.
+
+                    Kawasan ini menjadi pusat penelitian,
+                    pelestarian, edukasi, serta wisata sejarah yang
+                    memperkenalkan kebesaran Sriwijaya kepada masyarakat.
+                </p>
+
+                <a href="#galeri" class="btn">Lihat Poster</a>
+
+            </div>
+
+            <div class="image">
+                <img src="images/bg.jpg" alt="Taman Purbakala">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MEDIA INFORMASI DIGITAL ================= -->
+
+    <section id="galeri">
+
+    <h2>MEDIA INFORMASI DIGITAL</h2>
+
+    <p class="gallery-text">
+        Berikut adalah beberapa media informasi mengenai Taman Purbakala Kerajaan Sriwijaya.
+    </p>
+
+<div class="gallery">
+
+    <img src="images/pictogram.png" onclick="openModal(0)">
+    <img src="images/denah.png" onclick="openModal(1)">
+    <img src="images/larangan.png" onclick="openModal(2)">
+    <img src="images/logo.png" onclick="openModal(3)">
+    <img src="images/grapich.png" onclick="openModal(4)">
+
+</div>
+
+<div id="modal" class="modal">
+
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+
+    <img id="modalImg">
+
+    <span class="next" onclick="changeSlide(1)">&#10095;</span>
+
+</div>
+
+    </section>
+
+    <!-- ================= LOKASI & KONTAK ================= -->
+
+    <section id="lokasi-kontak" class="lokasi-kontak">
+
+        <div class="lokasi-box">
+
+            <h2 id="lokasi">📍 Lokasi</h2>
+
+            <p>Jl. Syakyakirti, Karang Anyar, Gandus, Palembang.</p>
+
+            <iframe
+                src="https://www.google.com/maps?q=Taman+Purbakala+Kerajaan+Sriwijaya&output=embed"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+        <div class="kontak-box">
+
+            <h2 id="kontak">📧 Kontak Kami</h2>
+
+            <div class="item">
+                <h4>Email</h4>
+                <p>info@tpks.com</p>
+            </div>
+
+            <div class="item">
+                <h4>Instagram</h4>
+                <p>@tpks</p>
+            </div>
+
+            <div class="item">
+                <h4>Alamat</h4>
+                <p>Palembang, Sumatera Selatan</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>Taman Purbakala Kerajaan Sriwijaya</h3>
+
+        <p>© 2026 Semua Hak Cipta Dilindungi.</p>
+
+    </footer>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
